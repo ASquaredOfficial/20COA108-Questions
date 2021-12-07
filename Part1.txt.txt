@@ -1,0 +1,36 @@
+------------------------------Part 1a------------------------------
+•	Pure functional languages lack the use of external values in their functions so the values associated with names never 
+	change (Michaelson, G. 2011). These are particularly useful as it makes programmers easier to debug. Given that there aren’t any 
+	intermediary elements involved in functional programming, the algorithm is directly related to the input and has no ‘hidden’ aspect to 
+	itself ensuring that algorithms written in a functional language is as transparent as possible. Pure functions can be seen as similar to mathematical
+	functions since there are no global variables. 
+•	Another benefit of functional programming is the fact that it doesn’t store any unnecessary values and only stores values when needed. 
+	This helps to increase computational speed as it thus avoids evaluating the inputs repeatedly and calculates them when needed, this is 
+	known as ‘Lazy Evaluation’. Additionally, using lazy evaluation ensures that a duplicated argument is never evaluated more than once (Thompson, S. 2011). 
+•	Functional Programming is also useful for its parallel evaluation. This is particularly useful to perform concurrent actions at the same 
+	time. Consequently, it allows a program to execute code efficiently saving time in contrast to sequential computing which is limited by 
+	the hardware’s physical capabilities.
+
+References:
+	Michaelson, G. ed.(2011) Functional Programming through Lamda Calculus, Heriot-Watt University 
+	Thompson,S. ed.(2011) Haskell the craft of functional programmin, Pearson Education Limited
+
+------------------------------Part 1b------------------------------
+A mathematical function is a relation between a set of inputs to a set of outputs. In Haskell, a function is a mapping from a set of arguments 
+to produce a single result (Hutton,G. 2016). The notation of functions in Haskell differs slightly as the functional application to a variable is 
+denoted using a space, while the multiplication of two functions is denoted using a “*” in oppose to mathematical functions that writes the two 
+functions next to each other. Additionally, functions in Haskell require that the ‘type arguments’ are fulfilled when calling, contrary to a mathematical 
+function not requiring any type arguments. Despite this, both Mathematical and Haskell functions return a result from its arguments.
+For example:
+	succ :: Integer -> Integer
+	succ n = n+1 
+is a Haskell function that returns the next number from the input as long as the input argument is followed. This can be written as normal mathematical
+function being '+1' from an input which is similar if not almost identical to the 'succ' function described above.
+
+References:
+	Hutton,G. ed.2 (2016) Programming in Haskell, Cambridge University Press 
+
+------------------------------Part 1c------------------------------
+A function is classified as high order if it takes a function as an argument or returns a function as a result, or does both (Thompson, S. 2011). Two 
+examples of where this is seen in the type of foldr, 'foldr :: (a -> b -> b) -> b -> [a] -> b'  and 'map :: (a -> b) -> [a] -> [b]'. The latter, map, being made
+up of the input function, the input list and the output list.
